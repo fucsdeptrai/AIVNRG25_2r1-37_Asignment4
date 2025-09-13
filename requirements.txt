@@ -1,0 +1,7 @@
+torch>=2.0.0 # install CPU version or CUDA-enabled build as needed
+numpy
+matplotlib
+
+
+# Optional (useful for dataframes/analysis)
+pandas
