@@ -1,6 +1,6 @@
-# README --- So sánh OmegaUpdater vs DeltaUpdater (toy implementation)
+# So sánh OmegaUpdater vs DeltaUpdater (toy implementation)
 
-**Ngắn gọn:** repo này chứa một triển khai nhỏ (toy) để so sánh hai
+Repo này chứa một triển khai nhỏ (toy) để so sánh hai
 chiến lược cập nhật bộ nhớ ngoài (Omega rule vs Delta rule) trên dữ liệu
 tổng hợp (key-value). Mục tiêu: chạy được end-to-end, thu CSV kết quả,
 và vẽ đồ thị so sánh.
