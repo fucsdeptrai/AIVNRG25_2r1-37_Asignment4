@@ -1,6 +1,6 @@
 import torch
 import time
-from src.data import generate_synthetic_data
+from src.data import generate_data
 from src.updaters import DeltaUpdater, OmegaUpdater
 
 def train_model(mem_size, dim, window, steps, lr, reg, seed, updater_type):
@@ -9,7 +9,7 @@ def train_model(mem_size, dim, window, steps, lr, reg, seed, updater_type):
     Returns metrics: mse_mean, cos_mean, update_time, mem_norm_change
     """
     # Sinh dữ liệu tổng hợp
-    keys, values = generate_synthetic_data(mem_size, dim, steps, seed=seed)
+    keys, values = generate_data(mem_size=mem_size, dim=dim, steps=steps, seed=seed, window=window, alpha=0.95)
     torch.manual_seed(seed)
     # Khởi tạo memory (ma trận trọng số) ban đầu bằng 0
     memory = torch.zeros(mem_size, dim)

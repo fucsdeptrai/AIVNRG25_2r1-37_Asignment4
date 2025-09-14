@@ -101,7 +101,7 @@ python3 -m src.plot_results
     cho nhiều `n`:
 
 ``` bash
-python3 -m src.plot_sensitivity
+python plot_sensitivity
 ```
 
 Các plot sẽ được lưu vào `results/plots/` (hoặc nơi script chỉ định).
